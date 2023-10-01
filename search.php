@@ -21,7 +21,7 @@ if (isset($_POST['search_query']) && isset($_POST['search_column'])) {
 
     // Construct a MySQL query to search for records in your table
     // Modify "your_table" and "column_name" to match your table and column names
-    $sql = "SELECT * FROM `dataset1_proteins` WHERE $search_column = $search_query";
+    $sql = "SELECT * FROM `dataset1_proteins` WHERE $search_column = '$search_query'";
 
     // Execute the query and fetch the results
     $result = $conn->query($sql);
