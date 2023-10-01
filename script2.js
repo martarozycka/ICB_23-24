@@ -47,7 +47,23 @@ document.addEventListener('DOMContentLoaded', function () {
                                 const row = document.createElement('tr');
                                 for (const key in result) {
                                     const cell = document.createElement('td');
-                                    cell.textContent = result[key];
+                                    if (key === 'PubMed_ID') {
+                                        // Create a link to PubMed using the PubMed ID
+                                        const pubMedLink = document.createElement('a');
+                                        pubMedLink.href = 'https://pubmed.ncbi.nlm.nih.gov/' + result[key]; // Construct the PubMed URL
+                                        pubMedLink.textContent = result[key]; // Display the PubMed ID
+                                        cell.appendChild(pubMedLink);
+                                    } 
+                                    else if (key === 'PDB_ID') {
+                                        // Create a link to PDB using the PDB ID
+                                        const PDBLink = document.createElement('a');
+                                        PDBLink.href = 'https://www.rcsb.org/structure/' + result[key]; // Construct the PDB URL
+                                        PDBLink.textContent = result[key]; // Display the PubMed ID
+                                        cell.appendChild(PDBLink);
+                                    } 
+                                    else {
+                                        cell.textContent = result[key];
+                                    }
                                     row.appendChild(cell);
                                 }
                                 resultsBody.appendChild(row);
