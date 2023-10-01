@@ -1,12 +1,16 @@
 document.addEventListener('DOMContentLoaded', function () {
     const searchForm = document.getElementById('search-form');
     const resultsBody = document.getElementById('results-body');
+    const sortColumnSelect = document.getElementById('sort-column'); //added
+    const sortOrderSelect = document.getElementById('sort-order'); //added
 
     searchForm.addEventListener('submit', function (event) {
         event.preventDefault();
 
         const searchQuery = document.getElementById('search-input').value;
         const searchColumn = document.getElementById('search-column').value;
+        const sortColumn = sortColumnSelect.value; // added (refers to line 4)
+        const sortOrder = sortOrderSelect.value; //added 
 
         // Send search query and column to search.php using AJAX
         const xhr = new XMLHttpRequest();
@@ -63,6 +67,5 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             }
         };
-        xhr.send(`search_query=${searchQuery}&search_column=${searchColumn}`);
-    });
+        xhr.send(`search_query=${searchQuery}&search_column=${searchColumn}&sort_column=${sortColumn}&sort_order=${sortOrder}`);    });
 });

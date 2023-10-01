@@ -17,11 +17,13 @@ if ($conn->connect_error) {
 if (isset($_POST['search_query']) && isset($_POST['search_column'])) {
     $search_query = $_POST['search_query'];
     $search_column = $_POST['search_column'];
+    $sort_column = $_POST['sort_column'];
+    $sort_order = $_POST['sort_order'];
     
 
     // Construct a MySQL query to search for records in your table
     // Modify "your_table" and "column_name" to match your table and column names
-    $sql = "SELECT * FROM `dataset1_proteins` WHERE $search_column = '$search_query'";
+    $sql = "SELECT * FROM `dataset1_proteins` WHERE $search_column = '$search_query' order by $sort_column $sort_order";
 
     // Execute the query and fetch the results
     $result = $conn->query($sql);
