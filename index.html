@@ -15,31 +15,34 @@
         <!-- Search input and button -->
         <section id="search-section">
             <form id="search-form" action="search.php" method="POST">
-                <label for="search-input">Search:</label>
-                <input type="text" id="search-input" name="search_query" placeholder="Enter your search...">
+                <div id="search-options">
+                    <label for="search-input">Search:</label>
+                    <input type="text" id="search-input" name="search_query" placeholder="Enter your search...">
 
-                <label for="search-column">Search in:</label>
-                <select id="search-column" name="search_column">
-                    <option value="Entry">Entry</option>
-                    <option value="PDB_ID">PDB ID</option>
-                    <option value="Mutation">Mutation</option>
-                    <option value="Protein_1">Protein 1</option>
-                    <option value="Protein_2">Protein 2</option>
-                    <option value="Experiment">Experiment</option>
-                    <option value="Temperature">Temperature</option>
-                    <option value="pH">pH</option>
-                    <option value="ΔG">Binding free energy (ΔG)</option>
-                    <option value="ΔΔG">Change in binding free energy (ΔΔG)</option>
-                    <option value="Authors">Authors</option>
-                    <option value="Journal">Journal</option>
-                    <option value="PubMed_ID">PubMed ID</option>
-                <!-- Add more options for other columns as needed -->
-                </select>
+                    <label for="search-column">Search in:</label>
+                    <select id="search-column" name="search_column">
+                        <option value="Entry">Entry</option>
+                        <option value="PDB_ID">PDB ID</option>
+                        <option value="Mutation">Mutation</option>
+                        <option value="Protein_1">Protein 1</option>
+                        <option value="Protein_2">Protein 2</option>
+                        <option value="Experiment">Experiment</option>
+                        <option value="Temperature">Temperature</option>
+                        <option value="pH">pH</option>
+                        <option value="ΔG">Binding free energy (ΔG)</option>
+                        <option value="ΔΔG">Change in binding free energy (ΔΔG)</option>
+                        <option value="Authors">Authors</option>
+                        <option value="Journal">Journal</option>
+                        <option value="PubMed_ID">PubMed ID</option>
+                    <!-- Add more options for other columns as needed -->
+                    </select>
+                
+                    <!-- Search input and button -->
+                    <button id="search-button" type="submit">Search</button>
+                </div>
 
-            <!-- Search input and button -->
-                <button id="search-button" type="submit">Search</button>
-
-                <label for="sort-column">Sort by:</label>
+                <div id="sorting-options">
+                    <label for="sort-column">Sort by:</label>
                 <select id="sort-column" name="sort_column">
                     <option value="Entry">Entry</option>
                     <option value="PDB_ID">PDB ID</option>
@@ -63,6 +66,80 @@
                     <option value="Desc">Descending</option>
                 <!-- Add more options for other columns as needed -->
                 </select>
+                </div>
+                
+                
+                <label> Display columns: </label>
+                <div id="column-selection-protein">
+                    <label for="column-checkbox">Protein information:</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="column-1a-checkbox" class="column-checkbox" value="Entry" checked>
+                        <label for="column-1a-checkbox">Entry ID</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="column-2a-checkbox" class="column-checkbox" value="PDB_ID" checked>
+                        <label for="column-2a-checkbox">PDB ID</label>
+                    </div>    
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="column-3a-checkbox" class="column-checkbox" value="Mutation" checked>
+                        <label for="column-3a-checkbox">Mutation</label>
+                    </div>  
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="column-4a-checkbox" class="column-checkbox" value="Protein_1" checked>
+                        <label for="column-4a-checkbox">Protein 1</label>
+                    </div> 
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="column-5a-checkbox" class="column-checkbox" value="Protein_2" checked>
+                        <label for="column-5a-checkbox">Protein 2</label>
+                    </div>
+                </div>
+                
+                <br>
+                <div id="column-selection-experiment">
+                    <label for="column-checkbox">Experimental conditions:</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="column-1b-checkbox" class="column-checkbox" value="Experiment" checked>
+                        <label for="column-1-checkbox">Experiment method</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="column-2b-checkbox" class="column-checkbox" value="Temperature" checked>
+                        <label for="column-2-checkbox">Temperature</label>
+                    </div>    
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="column-3b-checkbox" class="column-checkbox" value="pH" checked>
+                        <label for="column-3-checkbox">pH</label>
+                    </div>  
+                </div>
+                <br>
+                <div id="column-selection-thermodynamics">
+                    <label for="column-checkbox">Thermodynamic parameters:</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="column-1c-checkbox" class="column-checkbox" value="ΔG" checked>
+                        <label for="column-1-checkbox">Binding free energy (ΔG)</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="column-2c-checkbox" class="column-checkbox" value="ΔΔG" checked>
+                        <label for="column-2-checkbox">Change in binding free energy (ΔΔG)</label>
+                    </div>    
+                </div>
+                <br>
+                <div id="column-selection-literature">
+                    <label for="column-checkbox">Literature:</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="column-1d-checkbox" class="column-checkbox" value="Authors" checked>
+                        <label for="column-1-checkbox">Authors</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="column-2d-checkbox" class="column-checkbox" value="Journal" checked>
+                        <label for="column-2-checkbox">Journal</label>
+                    </div>    
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="column-3d-checkbox" class="column-checkbox" value="PubMed_ID" checked>
+                        <label for="column-3-checkbox">PubMed ID</label>
+                    </div>  
+                </div>
+                <button id="reset-all-button" type="button">Reset</button>
+
             </form>
         </section>
 

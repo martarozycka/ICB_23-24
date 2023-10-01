@@ -81,6 +81,77 @@ button:hover {
     background-color: #4e7b64; /* Slightly darker shade of sage green */
 }
 
+/* Add a horizontal line between sorting and column selection */
+#sorting-options, #search-options {
+    margin-bottom: 20px; /* Add some vertical spacing between sorting and column selection */
+    border-bottom: 1px solid #ccc; /* Add a horizontal line between sorting and column selection */
+    padding-bottom: 10px; /* Add some space below the horizontal line */
+}
+
+
+#column-selection-protein {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-group {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 20px; /* Adjust the margin to control the spacing between checkboxes and labels */
+}
+
+.column-checkbox {
+    margin-right: 5px; /* Add some spacing between checkboxes and labels */
+}
+
+#column-selection-experiment {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-group {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 20px; /* Adjust the margin to control the spacing between checkboxes and labels */
+}
+
+.column-checkbox {
+    margin-right: 5px; /* Add some spacing between checkboxes and labels */
+}
+
+#column-selection-thermodynamics {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-group {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 20px; /* Adjust the margin to control the spacing between checkboxes and labels */
+}
+
+.column-checkbox {
+    margin-right: 5px; /* Add some spacing between checkboxes and labels */
+}
+
+#column-selection-literature {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-group {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 20px; /* Adjust the margin to control the spacing between checkboxes and labels */
+}
+
+.column-checkbox {
+    margin-right: 5px; /* Add some spacing between checkboxes and labels */
+}
+
+
+
+
 #search-results {
     margin-top: 20px;
     overflow-x: auto; /* Add horizontal scroll if content overflows */
