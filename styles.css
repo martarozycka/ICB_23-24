@@ -1,0 +1,68 @@
+/* Reset some default styles and apply basic styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+main {
+    max-width: 100%; /* Set the maximum width to 100% to make it fit the screen */
+    margin: 20px auto; /* Adjust top and bottom margin as needed */
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    overflow-x: auto; /* Add horizontal scroll if content overflows */
+}
+
+table {
+    width: 100%; /* Make the table width 100% */
+    max-width: 100%; /* Set the maximum width to 100% */
+    overflow-x: auto; /* Add horizontal scroll if table overflows */
+    display: block; /* Allow table to be responsive */
+}
+
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protein database</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <header>
+        <h1>My Protein Database - project 1</h1>
+    </header>
+    
+    <main>
+        <!-- Search input and button -->
+        <section id="search-section">
+            <form id="search-form" action="search.php" method="POST">
+                <label for="search-input">Search:</label>
+                <input type="text" id="search-input" name="search_query" placeholder="Enter your search...">
+
+                <label for="search-column">Search in:</label>
+                <select id="search-column" name="search_column">
+                    <option value="Entry">Entry</option>
+                    <option value="PDB ID">PDB ID</option>
+                    <option value="Mutation">Mutation</option>
+                    <option value="Protein 1">Protein 1</option>
+                    <option value="Protein 2">Protein 2</option>
+                    <option value="Experiment">Experiment</option>
+                    <option value="Temperature">Temperature</option>
+                    <option value="pH">pH</option>
+                    <option value="Binding free energy (ΔG)">Binding free energy (ΔG)</option>
+                    <option value="Change in binding free energy (ΔΔG)">Change in binding free energy (ΔΔG)</option>
+                    <option value="Authors">Authors</option>
+                    <option value="Journal">Journal</option>
+                    <option value="PubMed ID">PubMed ID</option>
+                <!-- Add more options for other columns as needed -->
+                </select>
+
+            <!-- Search input and button -->
+                <button id="search-button" type="submit">Search</button>
+
+                <label for="sort-column">Sort by:</label>
+                <select id="sort-column" name="sort_column">
+                    <option value="Entry">Entry</option>
+                    <option value="PDB ID">PDB ID</option>
+                    <option value="Mutation">Mutation</option>
+                    <option value="Protein 1">Protein 1</option>
+                    <option value="Protein 2">Protein 2</option>
+                    <option value="Experiment">Experiment</option>
+                    <option value="Temperature">Temperature</option>
+                    <option value="pH">pH</option>
+                    <option value="Binding free energy (ΔG)">Binding free energy (ΔG)</option>
+                    <option value="Change in binding free energy (ΔΔG)">Change in binding free energy (ΔΔG)</option>
+                    <option value="Authors">Authors</option>
+                    <option value="Journal">Journal</option>
+                    <option value="PubMed ID">PubMed ID</option>
+                <!-- Add more options for other columns as needed -->
+                </select>
+
+                <label for="sort-order">Sort order:</label>
+                <select id="sort-order" name="sort-order">
+                    <option value="Ascending">Ascending</option>
+                    <option value="Descending">Descending</option>
+                <!-- Add more options for other columns as needed -->
+                </select>
+            </form>
+        </section>
+
+
+        <!-- Search results area -->
+        <section id="search-results">
+            <h2>Search Results:</h2>
+            <table id="results-table">
+               
+                <tbody id="results-body">
+                    <!-- Search results will be populated dynamically using JavaScript -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="script2.js"></script>
+</body>
+</html>

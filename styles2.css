@@ -1,0 +1,93 @@
+/* Reset some default styles and apply basic styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #5b8a72; 
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+main {
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    background-color: #fff;
+    font-size: 14px; 
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+
+th {
+    background-color: #5b8a72; /* Sage green */
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #5b8a72; /* Sage green */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #4e7b64; /* Slightly darker shade of sage green */
+}
+
+#search-results {
+    margin-top: 20px;
+    overflow-x: auto; /* Add horizontal scroll if content overflows */
+    max-width: 100%; /* Set the maximum width to 100% to make it fit the screen */
+    padding: 20px; /* Padding for the search results section */
+    background-color: #fff; /* Background color for the search results section */
+    border: 1px solid #ccc; /* Border for the search results section */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow for the search results section */
+    border-radius: 5px; /* Rounded corners for the search results section */
+}
