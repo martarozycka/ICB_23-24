@@ -1,16 +1,17 @@
 document.addEventListener('DOMContentLoaded', function () {
     const searchForm = document.getElementById('search-form');
     const resultsBody = document.getElementById('results-body');
-    const sortColumnSelect = document.getElementById('sort-column'); //added
-    const sortOrderSelect = document.getElementById('sort-order'); //added
+    const sortColumnSelect = document.getElementById('sort-column'); 
+    const sortOrderSelect = document.getElementById('sort-order'); 
+    const noResultsMessage = document.getElementById('no-results-message'); // added
 
     searchForm.addEventListener('submit', function (event) {
         event.preventDefault();
 
         const searchQuery = document.getElementById('search-input').value;
         const searchColumn = document.getElementById('search-column').value;
-        const sortColumn = sortColumnSelect.value; // added (refers to line 4)
-        const sortOrder = sortOrderSelect.value; //added 
+        const sortColumn = sortColumnSelect.value; 
+        const sortOrder = sortOrderSelect.value; 
 
         // Send search query and column to search.php using AJAX
         const xhr = new XMLHttpRequest();
@@ -28,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
                         // Clear previous results
                         resultsBody.innerHTML = '';
+                        noResultsMessage.style.display = 'none';
 
                         // Check if any results were found
                         if (response.length > 0) {
@@ -50,6 +52,10 @@ document.addEventListener('DOMContentLoaded', function () {
                                 }
                                 resultsBody.appendChild(row);
                             }
+                        }
+                        else {
+                            //Display no result found message
+                            noResultsMessage.style.display = 'block';    
                         }
                     } catch (error) {
                         // Handle JSON parsing errors
