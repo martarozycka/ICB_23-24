@@ -6,6 +6,29 @@ document.addEventListener('DOMContentLoaded', function () {
     const noResultsMessage = document.getElementById('no-results-message'); // added
     const columnCheckboxes = document.querySelectorAll('.column-checkbox'); // Get all checkboxes
     const resetAllButton = document.getElementById('reset-all-button');
+    const tempMinInput = document.getElementById('temp_min');
+    const tempMaxInput = document.getElementById('temp_max');
+    const phMinInput = document.getElementById('ph_min');
+    const phMaxInput = document.getElementById('ph_max');
+    const deltagMinInput = document.getElementById('deltag_min');
+    const deltagMaxInput = document.getElementById('deltag_max');
+    const deltadeltagMinInput = document.getElementById('delta_deltag_min');
+    const deltadeltagMaxInput = document.getElementById('delta_deltag_max');
+    const pubMedIDInput = document.getElementById('search_PubMedid');
+    const authorInput = document.getElementById('search_author');
+    const journalInput = document.getElementById('search_journal');
+    const PDB_IDInput = document.getElementById('search_PDB');
+    const experimTechInput = document.getElementById('experimental_tech');
+    const sourceOrganismInput = document.getElementById('search_organism');
+    const protein1Input = document.getElementById('protein_1');
+    const protein2Input = document.getElementById('protein_2');
+    const ogAAInput = document.getElementById('ogAA');
+    const mutatedAAInput = document.getElementById('mutatedAA');
+    const wildMutation = document.getElementById('wildChecked');
+    //const singleMutation = document.getElementById('single_mutation');
+    //const doubleMutation = document.getElementById('double_mutation');
+    //const multipleMutation = document.getElementById('multiple_mutation');
+  
 
     // Add an event listener to the "Reset All" button
     resetAllButton.addEventListener('click', function () {
@@ -22,6 +45,44 @@ document.addEventListener('DOMContentLoaded', function () {
         const searchColumn = document.getElementById('search-column').value;
         const sortColumn = sortColumnSelect.value; 
         const sortOrder = sortOrderSelect.value; 
+        const tempMin = tempMinInput.value;
+        const tempMax = tempMaxInput.value;
+        const phMin = phMinInput.value;
+        const phMax = phMaxInput.value;
+        const deltagMin = deltagMinInput.value;
+        const deltagMax = deltagMaxInput.value;
+        const deltadeltagMin = deltadeltagMinInput.value;
+        const deltadeltagMax = deltadeltagMaxInput.value;
+        const pubMedID = pubMedIDInput.value;
+        const author = authorInput.value;
+        const journal = journalInput.value;
+        const PDBID = PDB_IDInput.value;
+        const experimTech = experimTechInput.value;
+        const sourceOrganism = sourceOrganismInput.value;
+        const protein1 = protein1Input.value;
+        const protein2 = protein2Input.value;
+        const ogAA = ogAAInput.value;
+        const mutatedAA = mutatedAAInput.value;
+
+        const isWildChecked = wildMutation.checked;
+
+
+        // let wildChecked = false;
+        // let single = false;
+        // let double = false;
+        // let multiple = false;
+
+        // if (wildMutation.checked) {
+        //     wildChecked = true;
+        // } else if (singleMutation.checked) {
+        //     single = true;
+        // } else if (doubleMutation.checked) {
+        //     double = true;
+        // } else if (multipleMutation.checked) {
+        //     multiple = true;
+        // }
+
+
 
         // Get the selected columns
         const selectedColumns = Array.from(columnCheckboxes)
@@ -108,5 +169,5 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             }
         };
-        xhr.send(`search_query=${searchQuery}&search_column=${searchColumn}&sort_column=${sortColumn}&sort_order=${sortOrder}`);    });
+        xhr.send(`search_query=${searchQuery}&search_column=${searchColumn}&sort_column=${sortColumn}&sort_order=${sortOrder}&temp_min=${tempMin}&temp_max=${tempMax}&ph_min=${phMin}&ph_max=${phMax}&deltag_min=${deltagMin}&deltag_max=${deltagMax}&delta_deltag_min=${deltadeltagMin}&delta_deltag_max=${deltadeltagMax}&pubMedid=${pubMedID}&author=${author}&journal=${journal}&PDBID=${PDBID}&experimental_tech=${experimTech}&search_organism=${sourceOrganism}&protein_1=${protein1}&protein_2=${protein2}&ogAA=${ogAA}&mutatedAA=${mutatedAA}&wildChecked=${isWildChecked}`);    });
 });

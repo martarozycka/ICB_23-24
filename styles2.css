@@ -155,10 +155,12 @@ button:hover {
      
 }
 
-.PDB, .mutant-options, .wild, .exp_tech, .temperature-input, .ph-input, .deltag-input, .delta-delta-g-input, .PubMedID, .Author, .Journal {
+.PDB, .mutant-options, .exp_tech, .temperature-input, .ph-input, .delta-delta-g-input, .PubMedID, .Author, .Journal {
     display: inline-flex;
     align-items: center;
 }
+
+
 
 .empty-line {
     margin-top: 30px; /* Adjust the margin value to control the gap size */

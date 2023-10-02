@@ -16,63 +16,63 @@
         <section id="search-section">
             <form id="search-form" action="search.php" method="POST">
                 <div id="search-options">
-                    <label class="bold-label">Build search query</label>
+                    <label class="bold-label">Build an advanced search query</label>
                     <div class="empty-line"></div>
                     <label class="bold-label">Protein Information</label>
                     <div class="protein">
-                        <label for="search-protein-1">Protein 1</label>
+                        <label for="protein_1">Protein_1</label>
                         <br>
-                        <select id="search-protein-1" name="search_protein_1">
-                            <option value="*">All</option>
+                        <select id="protein_1" name="protein_1">
+                            <option value="">Select protein 1</option>
                             <option value="Human growth hormone/somatotropin (hGH)">Human growth hormone/somatotropin (hGH)</option>
                             <option value="Human interleukin-4 (hIL-4)">Human interleukin-4 (hIL-4)</option>
                             <option value="Human interleukin-8 (hIL-8)">Human interleukin-8 (hIL-8)</option>
                             <option value="Mouse Ig kappa chain C region (mAb A6)">Mouse Ig kappa chain C region (mAb A6)</option>
-                            <option value="Protein_2">Human adenovirus A serotype 12 fiber protein (ad12 knob)</option>
-                            <option value="Experiment">Human transforming growth factor beta 3 (TGF-&beta;3)</option>
-                            <option value="Temperature">Human bone morphogenetic protein-2 (BMP-2)</option>
-                            <option value="pH">Human-mouse monoclonal antibody C225 gamma 1 Fab (cetuximab)</option>
-                            <option value="ΔG">Human adenovirus D37 fiber protein</option>
-                            <option value="ΔΔG">Human MHCI-A2/Infuenza A virus matrix peptide complex</option>
-                            <option value="Authors">Human interleukin-4 (IL-4) with interleukin-4 receptor (IL-4R)</option>
-                            <option value="Journal">Human insulin-like growth factor I (IGF-I)</option>
-                            <option value="PubMed_ID">Human T-cell receptor A6</option>
-                            <option value="Entry">Mouse 14.3.D T-cell antigen receptor</option>
-                            <option value="Entry">Human peroxisomal targeting signal 1 receptor/peroxin-5 (PEX5) TPR domain</option>
-                            <option value="Entry">Human ephrin type-B receptor 4</option>
-                            <option value="Entry">Ginglymostoma cirratum antigen receptor (type II IgNAR)</option>
-                            <option value="Entry">Human insulin receptor, soluble (sHIR)</option>
+                            <option value="Human adenovirus A serotype 12 fiber protein (ad12 knob)">Human adenovirus A serotype 12 fiber protein (ad12 knob)</option>
+                            <option value="Human transforming growth factor beta 3 (TGF-&beta;3)">Human transforming growth factor beta 3 (TGF-&beta;3)</option>
+                            <option value="Human bone morphogenetic protein-2 (BMP-2)">Human bone morphogenetic protein-2 (BMP-2)</option>
+                            <option value="Human-mouse monoclonal antibody C225 gamma 1 Fab (cetuximab)">Human-mouse monoclonal antibody C225 gamma 1 Fab (cetuximab)</option>
+                            <option value="Human adenovirus D37 fiber protein">Human adenovirus D37 fiber protein</option>
+                            <option value="Human MHCI-A2/Infuenza A virus matrix peptide complex">Human MHCI-A2/Infuenza A virus matrix peptide complex</option>
+                            <option value="Human interleukin-4 (IL-4) with interleukin-4 receptor (IL-4R)">Human interleukin-4 (IL-4) with interleukin-4 receptor (IL-4R)</option>
+                            <option value="Human insulin-like growth factor I (IGF-I)">Human insulin-like growth factor I (IGF-I)</option>
+                            <option value="Human T-cell receptor A6">Human T-cell receptor A6</option>
+                            <option value="Mouse 14.3.D T-cell antigen receptor">Mouse 14.3.D T-cell antigen receptor</option>
+                            <option value="Human peroxisomal targeting signal 1 receptor/peroxin-5 (PEX5) TPR domain">Human peroxisomal targeting signal 1 receptor/peroxin-5 (PEX5) TPR domain</option>
+                            <option value="Human ephrin type-B receptor 4">Human ephrin type-B receptor 4</option>
+                            <option value="Ginglymostoma cirratum antigen receptor (type II IgNAR)">Ginglymostoma cirratum antigen receptor (type II IgNAR)</option>
+                            <option value="Human insulin receptor, soluble (sHIR)">Human insulin receptor, soluble (sHIR)</option>
                         </select>
-                        <label for="search-protein-2">Protein 2</label>
-                        <select id="search-protein-2" name="search_protein_2">
-                            <option value="*">All</option>
-                            <option value="Entry">Human growth hormone receptor (hGHR)</option>
-                            <option value="PDB_ID">Human prolactin receptor (hPRL-R)</option>
-                            <option value="Mutation">Human interleukin-4 receptor alpha (hIL-4Ra)</option>
-                            <option value="Protein_1">Human interleukin-8 receptor (hIL-8R)</option>
-                            <option value="Protein_2">Human interferon gamma receptor (IFN-&gamma;-R1)</option>
-                            <option value="Experiment">Human coxsackie virus and adenovirus receptor (CAR)</option>
-                            <option value="Temperature">Human TGF-beta receptor type-2 (TGFR-2)</option>
-                            <option value="pH">Human bone morphogenetic protein receptor type-1A (BMPR-1A)</option>
-                            <option value="ΔG">Human epidermal growth factor receptor 2 (EGFR-2/HER2)</option>
-                            <option value="ΔΔG">Human T-cell receptor JM22 V&beta;17</option>
-                            <option value="Authors">Cytokine receptor common subunit gamma</option>
-                            <option value="Journal">Human insulin receptor (IR)</option>
-                            <option value="PubMed_ID">Human HLA class I histocompatibility antigen, A-2 alpha chain with protein TAX-1 (TAX-HLAA2)</option>
-                            <option value="Entry">Staphylococcus aureus enterotoxin type C-3 (SEC3)</option>
-                            <option value="Entry">Staphylococcus aureus enterotoxin type B (SEB)</option>
-                            <option value="Entry">Human non-specific lipid-transfer protein/sterol carrier protein 2 (NSL-TP/SCP-2)</option>
-                            <option value="Entry">Human ephrin-B2</option>
-                            <option value="Entry">Gallus gallus egg-white lysozyme C (HEL/HEWL)</option>
-                            <option value="Entry">Human insulin</option>
+                        <label for="protein_2">Protein_2</label>
+                        <select id="protein_2" name="protein_2">
+                            <option value="">Select protein 2</option>
+                            <option value="Human growth hormone receptor (hGHR)">Human growth hormone receptor (hGHR)</option>
+                            <option value="Human prolactin receptor (hPRL-R)">Human prolactin receptor (hPRL-R)</option>
+                            <option value="Human interleukin-4 receptor alpha (hIL-4Ra)">Human interleukin-4 receptor alpha (hIL-4Ra)</option>
+                            <option value="Human interleukin-8 receptor (hIL-8R)">Human interleukin-8 receptor (hIL-8R)</option>
+                            <option value="Human interferon gamma receptor (IFN-&gamma;-R1)">Human interferon gamma receptor (IFN-&gamma;-R1)</option>
+                            <option value="Human coxsackie virus and adenovirus receptor (CAR)">Human coxsackie virus and adenovirus receptor (CAR)</option>
+                            <option value="Human TGF-beta receptor type-2 (TGFR-2)">Human TGF-beta receptor type-2 (TGFR-2)</option>
+                            <option value="Human bone morphogenetic protein receptor type-1A (BMPR-1A)">Human bone morphogenetic protein receptor type-1A (BMPR-1A)</option>
+                            <option value="Human epidermal growth factor receptor 2 (EGFR-2/HER2)">Human epidermal growth factor receptor 2 (EGFR-2/HER2)</option>
+                            <option value="Human T-cell receptor JM22 V&beta;17">Human T-cell receptor JM22 V&beta;17</option>
+                            <option value="Cytokine receptor common subunit gamma">Cytokine receptor common subunit gamma</option>
+                            <option value="Human insulin receptor (IR)">Human insulin receptor (IR)</option>
+                            <option value="Human HLA class I histocompatibility antigen, A-2 alpha chain with protein TAX-1 (TAX-HLAA2)">Human HLA class I histocompatibility antigen, A-2 alpha chain with protein TAX-1 (TAX-HLAA2)</option>
+                            <option value="Staphylococcus aureus enterotoxin type C-3 (SEC3)">Staphylococcus aureus enterotoxin type C-3 (SEC3)</option>
+                            <option value="Staphylococcus aureus enterotoxin type B (SEB)">Staphylococcus aureus enterotoxin type B (SEB)</option>
+                            <option value="Human non-specific lipid-transfer protein/sterol carrier protein 2 (NSL-TP/SCP-2)">Human non-specific lipid-transfer protein/sterol carrier protein 2 (NSL-TP/SCP-2)</option>
+                            <option value="Human ephrin-B2">Human ephrin-B2</option>
+                            <option value="Gallus gallus egg-white lysozyme C (HEL/HEWL)">Gallus gallus egg-white lysozyme C (HEL/HEWL)</option>
+                            <option value="Human insulin">Human insulin</option>
                     
                         </select>
                     </div>
 
                     <div class="source_organism">
                         <label for="search-organism">Source organism</label>
-                        <select id="search-organism" name="search_organism">
-                            <option value="*">All</option>
+                        <select id="search_organism" name="search_organism">
+                            <option value="">Select source organism</option>
                             <option value="Human">Homo sapiens</option>
                             <option value="Mouse">Mus</option>
                             <option value="Ginglymostoma cirratum">Ginglymostoma cirratum</option>
@@ -80,78 +80,79 @@
                             <option value="Staphylococcus aureus">Staphylococcus aureus</option>
                         </select>
                     </div>
+
                     <label></label>
                     <div class="PDB">
                         <label for="search-PDB">PDB_ID</label>
-                        <input type="text" id="search-PDB" name="search_PDB" placeholder="Enter your search...">
-                    </div>
-                    
-                    <label for="mutation-type">Mutation Type:</label>
-                    <div class="wild">
-                        <input type="checkbox" id="wild-type" name="mutation_type" value="wild">
-                        <label for="wild-type">Wild</label>
-                        
+                        <input type="text" id="search_PDB" name="search_PDB" placeholder="Enter your search...">
                     </div>
                     <label></label>
-                    <div class="mutant-options">
-                        <label for="mutant-options">Mutant:</label>
-                        <input type="checkbox" id="single-mutation" name="mutation_option" value="single">
-                        <label for="single-mutation">Single Mutation</label>
-                        <input type="checkbox" id="double-mutation" name="mutation_option" value="double">
-                        <label for="double-mutation">Double Mutation</label>
-                        <input type="checkbox" id="multiple-mutation" name="mutation_option" value="multiple">
-                        <label for="multiple-mutation">Multiple Mutations</label>
+                    
+                    
+                    <div class="wildChecked">
+                        <label for="wild-type">Wild</label>
+                        <input type="checkbox" id="wildChecked" name="wildChecked" value="wildChecked">
                     </div>
+                    <label></label>
+                    <!-- <div class="mutant-options">
+                        <label for="mutant-options">Mutant:</label>
+                        <input type="checkbox" id="single" name="single" value="single">
+                        <label for="single-mutation">Single Mutation</label>
+                        <input type="checkbox" id="double" name="double" value="double">
+                        <label for="double-mutation">Double Mutation</label>
+                        <input type="checkbox" id="multiple" name="multiple" value="multiple">
+                        <label for="multiple-mutation">Multiple Mutations</label>
+                    </div> -->
                     <label></label>
                     <div class="mutation_from_to">
-                        <label for="search-mutation">Mutation from: </label>
-                        <select id="search-mutation-from" name="search_mutation_from">
-                            <option value="*">All</option>
-                            <option value="Entry">A</option>
-                            <option value="Entry">C</option>
-                            <option value="Entry">D</option>
-                            <option value="Entry">E</option>
-                            <option value="Entry">F</option>
-                            <option value="Entry">G</option>
-                            <option value="Entry">H</option>
-                            <option value="Entry">I</option>
-                            <option value="Entry">K</option>
-                            <option value="Entry">L</option>
-                            <option value="Entry">M</option>
-                            <option value="Entry">N</option>
-                            <option value="Entry">P</option>
-                            <option value="Entry">Q</option>
-                            <option value="Entry">R</option>
-                            <option value="Entry">S</option>
-                            <option value="Entry">T</option>
-                            <option value="Entry">V</option>
-                            <option value="Entry">W</option>
-                            <option value="Entry">Y</option>
+                        <label for="ogAA">Mutation from: </label>
+                        <select id="ogAA" name="ogAA">
+                            <option value="">Original amino acid</option>
+                            <option value="A">A</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="E">E</option>
+                            <option value="F">F</option>
+                            <option value="G">G</option>
+                            <option value="H">H</option>
+                            <option value="I">I</option>
+                            <option value="K">K</option>
+                            <option value="L">L</option>
+                            <option value="M">M</option>
+                            <option value="N">N</option>
+                            <option value="P">P</option>
+                            <option value="Q">Q</option>
+                            <option value="R">R</option>
+                            <option value="S">S</option>
+                            <option value="T">T</option>
+                            <option value="V">V</option>
+                            <option value="W">W</option>
+                            <option value="Y">Y</option>
                         </select>
 
-                        <label for="search-mutation-to">to: </label>
-                        <select id="search-mutation-to" name="search_mutation_to">
-                            <option value="*">All</option>
-                            <option value="Entry">A</option>
-                            <option value="Entry">C</option>
-                            <option value="Entry">D</option>
-                            <option value="Entry">E</option>
-                            <option value="Entry">F</option>
-                            <option value="Entry">G</option>
-                            <option value="Entry">H</option>
-                            <option value="Entry">I</option>
-                            <option value="Entry">K</option>
-                            <option value="Entry">L</option>
-                            <option value="Entry">M</option>
-                            <option value="Entry">N</option>
-                            <option value="Entry">P</option>
-                            <option value="Entry">Q</option>
-                            <option value="Entry">R</option>
-                            <option value="Entry">S</option>
-                            <option value="Entry">T</option>
-                            <option value="Entry">V</option>
-                            <option value="Entry">W</option>
-                            <option value="Entry">Y</option>
+                        <label for="mutatedAA">to: </label>
+                        <select id="mutatedAA" name="mutatedAA">
+                            <option value="">Mutated amino acid</option>
+                            <option value="A">A</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="E">E</option>
+                            <option value="F">F</option>
+                            <option value="G">G</option>
+                            <option value="H">H</option>
+                            <option value="I">I</option>
+                            <option value="K">K</option>
+                            <option value="L">L</option>
+                            <option value="M">M</option>
+                            <option value="N">N</option>
+                            <option value="P">P</option>
+                            <option value="Q">Q</option>
+                            <option value="R">R</option>
+                            <option value="S">S</option>
+                            <option value="T">T</option>
+                            <option value="V">V</option>
+                            <option value="W">W</option>
+                            <option value="Y">Y</option>
                         </select>
                     </div>
                     <label></label>
@@ -160,71 +161,72 @@
                     <div class="exp_tech">
                         <label for="experimental-tech">Experimental technique</label>
                         <select id="experimental_tech" name="experimental_tech">
-                            <option value="*">All</option>
-                            <option value="Human">Competitive displacement </option>
-                            <option value="Mouse">Competitive Binding</option>
-                            <option value="Ginglymostoma cirratum">Surface Plasmon Resonance</option>
-                            <option value="Gallus gallus">Competition ELISA</option>
-                            <option value="Staphylococcus aureus">Fluorescence Anisotropy/Polarization</option>
-                            <option value="Gallus gallus">Sedimentation equilibrium using analytical centrifugation or surface plasmon resonance</option>
-                            <option value="Gallus gallus">Isothermal Titration Microcalorimetry</option>
-                            <option value="Gallus gallus">Isothermal Titration Calorimetry</option>
-                            <option value="Gallus gallus">Microtiter Plate Antibody Capture Assay</option>
+                            <option value="">Select experiment technique</option>
+                            <option value="Competitive displacement">Competitive displacement</option>
+                            <option value="Competitive Binding">Competitive Binding</option>
+                            <option value="Surface Plasmon Resonance">Surface Plasmon Resonance</option>
+                            <option value="Competition ELISA">Competition ELISA</option>
+                            <option value="Fluorescence Anisotropy/Polarization">Fluorescence Anisotropy/Polarization</option>
+                            <option value="Sedimentation equilibrium using analytical centrifugation or surface plasmon resonance">Sedimentation equilibrium using analytical centrifugation or surface plasmon resonance</option>
+                            <option value="Isothermal Titration Microcalorimetry">Isothermal Titration Microcalorimetry</option>
+                            <option value="Isothermal Titration Calorimetry">Isothermal Titration Calorimetry</option>
+                            <option value="Microtiter Plate Antibody Capture Assay">Microtiter Plate Antibody Capture Assay</option>
                         </select>
                     </div>
                     <label></label>
                     <div class="temperature-input">
-                        <label for="temperature">Temperature:</label>
-                        <input type="number" id="temperature" name="temperature" placeholder="Min...">
-                        <label for="to">to</label>
-                        <input type="number" id="to" name="to" placeholder="Max...">
+                        <label for="temp_min">Temperature:</label>
+                        <input type="number" id="temp_min" name="temp_min" placeholder="Min...">
+                        <label for="temp_max">to</label>
+                        <input type="number" id="temp_max" name="temp_max" placeholder="Max...">
                     </div>
                     <label></label>
                     <div class="ph-input">
-                        <label for="ph">pH:</label>
-                        <input type="number" id="ph" name="ph" placeholder="Min...">
-                        <label for="to">to</label>
-                        <input type="number" id="to" name="to" placeholder="Max...">
+                        <label for="ph_min">pH:</label>
+                        <input type="number" id="ph_min" name="ph_min" placeholder="Min..." step="0.1">
+                        <label for="ph_max">to</label>
+                        <input type="number" id="ph_max" name="ph_max" placeholder="Max..." step="0.1">
                     </div>
                     <div class="empty-line"></div>
+
                     <label class="bold-label">Thermodynamic Parameters</label>
-                    <div class="deltag-input">
-                        <label for="deltag">ΔG from:</label>
-                        <input type="number" id="deltag" name="deltag" placeholder="Min...">
-                        <label for="to">to</label>
-                        <input type="number" id="to" name="to" placeholder="Max...">
+                    <div class="delta-g-input">
+                        <label for="delta-g">ΔG from:</label>
+                        <input type="number" id="deltag_min" name="deltag_min" placeholder="Min..." step="0.01">
+                        <label for="deltag_min">to</label>
+                        <input type="number" id="deltag_max" name="deltag_max" placeholder="Max..." step="0.01">
                     </div>
                     <label></label>
                     <div class="delta-delta-g-input">
                         <label for="delta-delta-g">ΔΔG from:</label>
-                        <input type="number" id="delta-delta-g" name="delta-delta-g" placeholder="Min...">
-                        <label for="to">to</label>
-                        <input type="number" id="to" name="to" placeholder="Max...">
+                        <input type="number" id="delta_deltag_min" name="delta_deltag_min" placeholder="Min..." step="0.01">
+                        <label for="delta_deltag_min">to</label>
+                        <input type="number" id="delta_deltag_max" name="delta_deltag_max" placeholder="Max..." step="0.01">
                     </div>
                     <div class="empty-line"></div>
                     <label class="bold-label">Literature Information</label>
                     <div class="PubMedID">
                         <label for="search-PubMed">PubMed_ID:</label>
-                        <input type="text" id="search-PubMedid" name="search_PubMedid" placeholder="Enter your search...">
+                        <input type="text" id="search_PubMedid" name="search_PubMedid" placeholder="Enter your search...">
                     </div>
                     <label></label>
                     <div class="Author">
                         <label for="search-author">Author:</label>
-                        <input type="text" id="search-author" name="search_author" placeholder="Enter your search...">
+                        <input type="text" id="search_author" name="search_author" placeholder="Enter your search...">
                     </div>
                     <label></label>
                     <div class="Journal">
                         <label for="search-journal">Journal:</label>
-                        <input type="text" id="search-journal" name="search_journal" placeholder="Enter your search...">
+                        <input type="text" id="search_journal" name="search_journal" placeholder="Enter your search...">
                     </div>
 
 
                     <div class="empty-line"></div>
                     <!-- Search input and button -->
-                    <label for="search-input">Search:</label>
+                    <label for="search-input" class="bold-label">Or simply search:</label>
                     <input type="text" id="search-input" name="search_query" placeholder="Enter your search...">
 
-                    <label for="search-column">Search in:</label>
+                    <label for="search-column" class="bold-label">in column:</label>
                     <select id="search-column" name="search_column">
                         <option value="Entry">Entry</option>
                         <option value="PDB_ID">PDB ID</option>
@@ -246,7 +248,7 @@
                 </div>
 
                 <div id="sorting-options">
-                    <label for="sort-column">Sort by:</label>
+                    <label for="sort-column" class="bold-label">Sort by:</label>
                 <select id="sort-column" name="sort_column">
                     <option value="Entry">Entry</option>
                     <option value="PDB_ID">PDB ID</option>
@@ -264,7 +266,7 @@
                 <!-- Add more options for other columns as needed -->
                 </select>
                 <label></label>
-                <label for="sort-order">Sort order:</label>
+                <label for="sort-order" class="bold-label">Sort order:</label>
                 <select id="sort-order" name="sort-order">
                     <option value="Asc">Ascending</option>
                     <option value="Desc">Descending</option>
@@ -273,7 +275,7 @@
                 </div>
                 
                 
-                <label> Display columns: </label>
+                <label class="bold-label"> Display columns: </label>
                 <div id="column-selection-protein">
                     <label for="column-checkbox">Protein information:</label>
                     <div class="checkbox-group">
